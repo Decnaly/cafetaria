@@ -1,5 +1,5 @@
 import React from 'react';
-import emptyCartImage from '../assets/images/illustration-empty-cart.svg';
+import emptyCartImage from '../../assets/images/illustration-empty-cart.svg';
 
 function Cart({ cartItems, onClose, onRemoveItem, onUpdateQuantity, onConfirmOrder }) {
   const total = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
